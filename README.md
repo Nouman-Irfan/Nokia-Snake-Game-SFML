@@ -55,7 +55,7 @@
 | | | |
 |---|---|---|
 | [🐍 About the Project](#-about-the-project) | [✨ Features](#-features) | [🧠 Concepts &amp; Techniques Used](#-concepts--techniques-used) |
-| [🏗️ Project Architecture](#️-project-architecture) | [🕹️ Game Modes](#️-game-modes) | [🖼️ Screenshots](#-Screenshots) |
+| [🏗️ Project Architecture](#️-project-architecture) | [🕹️ Game Modes](#️-game-modes) | [🖼️ Screenshots](#-screenshots) |
 | [📦 Prerequisites](#-prerequisites) | [⚙️ SFML Setup Guide](#️-sfml-setup-guide-visual-studio-2026) | [🚀 Quick Start](#-quick-start) |
 | [🏗️ Project Structure](#️-project-structure) | [🎮 Gameplay & Controls](#-gameplay--controls) | [💾 Score & Data Persistence](#-score--data-persistence) |
 | [🐞 Troubleshooting](#-troubleshooting) | [🗺️ Roadmap](#️-roadmap) | [🤝 Contributing](#-contributing) |
