@@ -434,7 +434,6 @@ This project is licensed under the **GNU General Public License v3.0** — see t
 
 - [SFML](https://www.sfml-dev.org/) — Simple and Fast Multimedia Library
 - Nokia — for the original 3310 Snake that inspired a generation of developers
-- [Shields.io](https://shields.io/) for badges, [Capsule Render](https://github.com/kyechan99/capsule-render) for the header banner, and [readme-typing-svg](https://github.com/DenverCoder1/readme-typing-svg) for the animated title text
 
 <br/>
 
