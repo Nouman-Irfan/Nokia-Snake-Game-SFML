@@ -136,6 +136,102 @@ This project was built as an academic semester project to demonstrate mastery of
 
 <br/>
 
+## 🏗️ Project Architecture
+
+The project follows a **state-based procedural architecture**. A central game loop processes input, updates the active state, and renders the appropriate screen.
+
+```mermaid
+flowchart TD
+    A([Application Start]) --> B[Create SFML Window]
+    B --> C[Load Textures, Font, Sounds and Music]
+    C --> D[Create Missing Data Files]
+    D --> E{Player Name Entered?}
+
+    E -- No --> F[Name Entry Screen]
+    F --> G[Validate Input]
+    G --> H[Save Name to user_record.txt]
+    H --> I[Main Menu]
+
+    E -- Yes --> I
+
+    I --> J{Selected Option}
+
+    J --> K[Normal Mode]
+    J --> L[Obstacle Mode]
+    J --> M[Registered Players]
+    J --> N[High Scores]
+    J --> O[Exit Application]
+
+    K --> P[Reset Game]
+    P --> Q[Initialize Snake]
+    Q --> R[Spawn Food]
+    R --> S[Gameplay Loop]
+
+    L --> T[Reset Game]
+    T --> U[Initialize Snake]
+    U --> V[Generate 20 Obstacles]
+    V --> W[Spawn Food]
+    W --> S
+
+    S --> X{Game Paused?}
+    X -- Yes --> Y[Draw Pause Overlay]
+    Y --> S
+
+    X -- No --> Z[Move Snake]
+    Z --> AA[Check Food Collision]
+    AA --> AB[Check Wall, Self and Obstacle Collision]
+
+    AB --> AC{Collision Detected?}
+    AC -- No --> AD[Render Background, Food, Obstacles, Snake and Score]
+    AD --> S
+
+    AC -- Yes --> AE[Save Score]
+    AE --> AF[Play Game Over Sound]
+    AF --> AG[Game Over Screen]
+    AG --> I
+
+    M --> AH[Read user_record.txt]
+    AH --> AI[Display Registered Players]
+    AI --> I
+
+    N --> AJ[Read Normal and Obstacle Score Files]
+    AJ --> AK[Allocate Dynamic Arrays]
+    AK --> AL[Parse Names and Scores]
+    AL --> AM[Sort Scores using Bubble Sort]
+    AM --> AN[Display Leaderboards]
+    AN --> AO[Release Dynamic Memory]
+    AO --> I
+
+    O --> AP[Release All Dynamic Resources]
+    AP --> AQ([Application End])
+```
+
+### Architecture Components
+
+| Component | Responsibility |
+|---|---|
+| **Main Loop** | Polls SFML events and routes execution to the active screen |
+| **State Manager** | Uses `gameState` to control menu, gameplay, players, scores, and game-over screens |
+| **Input System** | Handles text entry, menu navigation, movement, pause, and escape actions |
+| **Gameplay System** | Updates snake movement, food collection, speed, and collision logic |
+| **Rendering System** | Draws the background, sprites, score text, menus, and overlays |
+| **Persistence System** | Stores names and mode-specific scores in text files |
+| **Memory Manager** | Allocates and releases snake, obstacle, player, and score arrays |
+
+### Game-State Mapping
+
+| State | Screen / Mode | Main Function |
+|:---:|---|---|
+| `nameEntered = false` | Name Entry | `enterName()` |
+| `0` | Main Menu | `showMenu()` |
+| `1` | Normal Mode | `playGame()` |
+| `2` | Obstacle Mode | `playGame()` |
+| `3` | Registered Players | `showPlayers()` |
+| `4` | High Scores | `showScores()` |
+| `5` | Game Over | `showGameOver()` |
+
+<br/>
+
 ## 🕹️ Game Modes
 
 <table>
