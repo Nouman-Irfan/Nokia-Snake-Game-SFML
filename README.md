@@ -232,6 +232,55 @@ flowchart TD
 
 <br/>
 
+## 🔄 State Machine Diagram
+
+The game uses the `gameState` variable to control navigation between the different screens and gameplay modes.
+
+```mermaid
+stateDiagram-v2
+    [*] --> NameEntry
+
+    NameEntry --> MainMenu: Valid name submitted
+
+    MainMenu --> NormalMode: Select Normal Mode
+    MainMenu --> ObstacleMode: Select Obstacle Mode
+    MainMenu --> RegisteredPlayers: Select Registered Players
+    MainMenu --> HighScores: Select High Scores
+    MainMenu --> [*]: Select Exit
+
+    NormalMode --> Paused: Press P
+    Paused --> NormalMode: Press P
+
+    ObstacleMode --> PausedObstacle: Press P
+    PausedObstacle --> ObstacleMode: Press P
+
+    NormalMode --> GameOver: Wall or self collision
+    ObstacleMode --> GameOver: Wall, self, or obstacle collision
+
+    NormalMode --> MainMenu: Press Esc
+    ObstacleMode --> MainMenu: Press Esc
+
+    RegisteredPlayers --> MainMenu: Press Esc
+    HighScores --> MainMenu: Press Esc
+    GameOver --> MainMenu: Press Esc
+```
+
+### State Mapping
+
+| State Condition | Active Screen |
+|:---:|---|
+| `nameEntered == false` | Name Entry |
+| `gameState == 0` | Main Menu |
+| `gameState == 1` | Normal Mode |
+| `gameState == 2` | Obstacle Mode |
+| `gameState == 3` | Registered Players |
+| `gameState == 4` | High Scores |
+| `gameState == 5` | Game Over |
+
+> **Note:** Pause is controlled by the separate Boolean variable `gamePaused`, rather than using a separate numerical `gameState`.
+
+<br/>
+
 ## 🕹️ Game Modes
 
 <table>
