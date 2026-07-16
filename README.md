@@ -418,7 +418,7 @@ Please keep contributions consistent with the project's existing coding style (A
 | | |
 |:---:|:---:|
 | **Muhammad Nouman** | **Aqsa Ismail** |
-| [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Nouman-Irfan) | Project Collaborator |
+| [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Nouman-Irfan) | [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/aqsaismail04) |
 
 </div>
 
