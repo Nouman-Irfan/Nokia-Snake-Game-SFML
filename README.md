@@ -1,5 +1,6 @@
 # Nokia-Snake-Game-SFML
 🐍 A polished desktop implementation of the classic Nokia Snake Game using C++ &amp; SFML. Demonstrates 🧠 dynamic memory allocation, 📁 file handling, 🏆 score persistence &amp; Bubble Sort, 🎮 Normal/Obstacle modes, ⏸️ pause/resume, 🔊 audio, and 🎨 sprite-based graphics with efficient game-state management.
+
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=NOKIA%20SNAKE%20GAME&fontSize=55&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=A%20Modern%20C%2B%2B20%20%2B%20SFML%203.1.0%20Reimagination%20of%20a%20Legend&descAlignY=58&descSize=18" width="100%"/>
