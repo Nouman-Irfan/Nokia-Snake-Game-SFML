@@ -33,7 +33,6 @@
 <a href="#-quick-start"><img src="https://img.shields.io/badge/🚀_QUICK_START-2ea44f?style=for-the-badge" /></a>
 <a href="#️-sfml-setup-guide-visual-studio-2026"><img src="https://img.shields.io/badge/⚙️_SFML_SETUP-blue?style=for-the-badge" /></a>
 <a href="#-gameplay--controls"><img src="https://img.shields.io/badge/🎮_HOW_TO_PLAY-orange?style=for-the-badge" /></a>
-<a href="#-screenshots"><img src="https://img.shields.io/badge/🖼️_SCREENSHOTS-purple?style=for-the-badge" /></a>
 </p>
 <p>
 <a href="main.cpp"><img src="https://img.shields.io/badge/📄_Open_main.cpp-181717?style=for-the-badge&logo=cplusplus" /></a>
