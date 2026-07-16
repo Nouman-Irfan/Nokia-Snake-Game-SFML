@@ -18,14 +18,6 @@
 <img src="https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge&logo=gnu&logoColor=white" />
 </p>
 
-<p>
-<img src="https://img.shields.io/github/stars/Nouman-Irfan/Nokia-Snake-Game-SFML?style=flat-square&color=yellow&logo=github" />
-<img src="https://img.shields.io/github/forks/Nouman-Irfan/Nokia-Snake-Game-SFML?style=flat-square&color=blue&logo=github" />
-<img src="https://img.shields.io/github/last-commit/Nouman-Irfan/Nokia-Snake-Game-SFML?style=flat-square&color=orange&logo=github" />
-<img src="https://img.shields.io/github/repo-size/Nouman-Irfan/Nokia-Snake-Game-SFML?style=flat-square&color=brightgreen&logo=github" />
-<img src="https://img.shields.io/badge/status-actively%20maintained-success?style=flat-square" />
-</p>
-
 <br/>
 
 <!-- QUICK ACTION BUTTONS -->
